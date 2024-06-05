@@ -382,6 +382,18 @@ Header Style
   padding: 0px 15px 0px 45px;
 }
 
+body .container .page-content .login input {
+  background-color: #251212;
+  height: 46px;
+  border-radius: 23px;
+  border: none;
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 10px; /* Optional: spacing between inputs */
+  padding: 10px;
+  font-size: 16px;
+}
+
 .header-area .main-nav #search i {
   position: absolute;
   color: #666;
@@ -454,12 +466,14 @@ Header Style
 
 .header-area .main-nav .nav li:last-child a {
   background-color: #251212;
-  padding: 8px 10px 8px 20px;
+  /* padding: 8px 10px 8px 20px; */
   border-radius: 23px;
+  padding-right: 15px;
+  width: 120px;
 }
 
 .header-area .main-nav .nav li:last-child a img {
-  max-width: 30px;
+  max-width: 20px;
   border-radius: 50%;
   margin-left: 5px;
 }
@@ -718,9 +732,9 @@ Header Style
     background: #fff !important;
     color: #A04749!important;
   }
-  .header-area .main-nav .nav li:last-child a img {
+  /* .header-area .main-nav .nav li:last-child a img {
     display: none;
-  }
+  } */
   .header-area .main-nav .nav li:last-child a:hover {
     color: #A04749 !important;
     background-color: transparent !important;
@@ -767,7 +781,7 @@ Banner Style
   background-image: url(../images/banner-bg.jpg);
   background-position: center center;
   background-size: cover;
-  min-height: 480px;
+  min-height: 380px;
   border-radius: 23px;
   padding: 80px 60px;
 }

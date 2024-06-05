@@ -1,66 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>WyvernCraft - Minecraft Server</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>PayPal Button</title>
+    <script src="https://www.paypal.com/sdk/js?client-id=YOUR_CLIENT_ID"></script>
 </head>
 <body>
-  <div id="app">
-    <header>
-      <nav>
-        <ul>
-          <li><router-link to="/">Home</router-link></li>
-          <li><router-link to="/store">Store</router-link></li>
-          <li><router-link to="/lore">Lore</router-link></li>
-          <li><router-link to="/map">Map</router-link></li>
-          <li><router-link to="/items">Items</router-link></li>
-          <li><router-link to="/news">News</router-link></li>
-          <li><router-link to="/vote">Vote</router-link></li>
-          <li><router-link to="/profile">Profile</router-link></li>
-        </ul>
-      </nav>
-    </header>
-
-    <router-view></router-view>
-
-    <footer>
-      <p>Copyright © 2036 <a href="#">Cyborg Gaming</a> Company. All rights reserved.
-      <br>Design: <a href="https://templatemo.com" target="_blank" title="free CSS templates">TemplateMo</a></p>
-    </footer>
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
-  <script src="https://unpkg.com/vue-router@3.5.2/dist/vue-router.js"></script>
-  <script>
-    const Home = { template: '<div><h2>Home</h2><p>Welcome to WyvernCraft - Minecraft Server</p></div>' }
-    const Store = { template: '<div><h2>Store</h2><p>Browse our store</p></div>' }
-    const Lore = { template: '<div><h2>Lore</h2><p>Discover the lore</p></div>' }
-    const Map = { template: '<div><h2>Map</h2><p>Explore the map</p></div>' }
-    const Items = { template: '<div><h2>Items</h2><p>View the items</p></div>' }
-    const News = { template: '<div><h2>News</h2><p>Read the latest news</p></div>' }
-    const Vote = { template: '<div><h2>Vote</h2><p>Vote for us</p></div>' }
-    const Profile = { template: '<div><h2>Profile</h2><p>View your profile</p></div>' }
-
-    const routes = [
-      { path: '/', component: Home },
-      { path: '/store', component: Store },
-      { path: '/lore', component: Lore },
-      { path: '/map', component: Map },
-      { path: '/items', component: Items },
-      { path: '/news', component: News },
-      { path: '/vote', component: Vote },
-      { path: '/profile', component: Profile }
-    ]
-
-    const router = new VueRouter({
-      routes
-    })
-
-    new Vue({
-      router
-    }).$mount('#app')
-  </script>
+  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+    <input type="hidden" name="cmd" value="_s-xclick" />
+    <input type="hidden" name="hosted_button_id" value="LGN7YHYCW5YE6" />
+    <input type="hidden" name="currency_code" value="USD" />
+    <input type="image" src="../public/assets/images/paypal-button.png" border="0" width="200px" name="submit" title="PayPal is the easiest and safest way to pay for your online purchases." alt="Buy now" />
+  </form>
 </body>
 </html>

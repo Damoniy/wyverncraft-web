@@ -9,9 +9,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <title>WyvernCraft - Minecraft Server</title>
-
+    <script src="../public/assets/js/redirect.js"></script>
+    
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
 
     <link rel="stylesheet" href="assets/css/fontawesome.css">
     <link rel="stylesheet" href="assets/css/templatemo-cyborg-gaming.css">
@@ -21,7 +21,7 @@
 
   </head>
 
-<body>
+<body style="width: 100vw; margin: 0 auto;background-image: url(../public/assets/images/login-bg.png);background-size: cover;">
   <div id="js-preloader" class="js-preloader">
     <div class="preloader-inner">
       <span class="dot"></span>
@@ -39,30 +39,16 @@
                 <nav class="main-nav">
                     <ul class="nav">
                         <li><a href="index.html" class="active">Home</a></li>
-                        <li><a href="browse.html">Store</a></li>
-                        <li><a href="details.html">Lore</a></li>
-                        <li><a href="streams.html">Map</a></li>
-                        <li><a href="streams.html">Items</a></li>
-                        <li><a href="streams.html">News</a></li>
-                        <li><a href="streams.html">Vote </a></li>
-                        <li><a href="profile.html">Profile <img src="http://textures.minecraft.net/texture/3b66f31070c41b167f3a39d23b7ac2a760c23bbe42b090c01033d6b6d5053a0f" alt=""></a></li>
+                        <li><a href="store.html">Store</a></li>
+                        <li><a href="lore.html">Lore</a></li>
+                        <li><a href="map.html">Map</a></li>
+                        <li><a href="items.html">Items</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="vote.html">Vote </a></li>
+                        <li><a href="profile.html">Profile <img id="avatar" style="border-radius: 0;width: 36px;height: auto;" alt=""></a></li>
                     </ul>   
-                    <div id="playerID"></div>
-                    <script>
-                      function getPlayerID(playerName) {
-                        fetch('https://cors-anywhere.herokuapp.com/https://api.mojang.com/users/profiles/minecraft/Kioumi')
-                        .then(response => response.json())
-                        .then(data => {
-                          document.getElementById('playerID').innerText = 'ID do jogador ' + playerName + ': ' + data.id;
-                          console.log(data);
-                        })
-                        .catch(error => console.error('Erro:', error));
-                      }
-              
-                      var playerName = "Kioumi";
-                      getPlayerID(playerName);
-                  </script>
-                </nav>
+                    <script src="../public/assets/js/avatar.js"></script>
+                  </nav>
             </div>
         </div>
     </div>
@@ -71,12 +57,12 @@
     <div class="row">
       <div class="col-lg-12">
         <div class="page-content">
-          <div class="main-banner">
+          <div class="main-banner" style="height: 10%;">
             <div class="row">
               <div class="col-lg-7">
                 <div class="header-text">
                   <h4><em>WyvernCraft</em></h4>
-                  <h5>A Minecraft phantastic adventure<br></h5>
+                  <h5 style="font-weight: 100;">A Minecraft phantastic adventure<br></h5>
                   <div> - </div>
                   <div class="main-button">
                     <a href="browse.html">Browse Now</a>
@@ -240,7 +226,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <p>Copyright © 2036 <a href="#">Cyborg Gaming</a> Company. All rights reserved. 
+          <p>Copyright © 2024 <a href="#">WyvernCraft</a> Minecraft Server. All rights reserved. 
           
           <br>Design: <a href="https://templatemo.com" target="_blank" title="free CSS templates">TemplateMo</a></p>
         </div>
